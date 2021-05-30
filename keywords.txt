@@ -1,0 +1,8 @@
+rand
+Rand
+randint
+RandInt
+random
+Random
+uniform
+Uniform
