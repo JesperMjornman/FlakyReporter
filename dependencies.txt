@@ -1,2 +1,0 @@
-pytest
-sudo apt-get install -y python3-cpuinfo.
