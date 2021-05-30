@@ -1,4 +1,5 @@
 import math, json
+import pkgutil
 from flakyreporter.util import RandReporterException
 from flakyreporter.util import bcolors as Color
 from typing import ClassVar
@@ -198,13 +199,17 @@ class RandomnessDetector:
         
     def _check_for_keyword(self, func_name, lineno, line):
         result = dict()
-        with open('./keywords.txt', "r") as f:
-            for keyword in f.readlines():
-                if keyword[:-1] in line:               
-                    try:
-                        result[keyword[:-1]] += 1
-                    except:
-                        result[keyword[:-1]] = 1   
+        try:
+            data = str(pkgutil.get_data(__name__, 'keywords.dat')).replace('\'', '').replace('b', '').split('\\n')
+        except Exception as e:
+            raise RandReporterException(e)
+        
+        for keyword in data:
+            if keyword[:-1] in line:               
+                try:
+                    result[keyword[:-1]] += 1
+                except:
+                    result[keyword[:-1]] = 1   
         
         if result:
             try:
@@ -493,6 +498,9 @@ class RandomnessDetector:
             print('Log of traced function {} not found.'.format(func_name))
             raise Exception('Function name not found in ./tracelogs')
         
+        elif 'failed' not in self.logs[func_name]:
+            raise RandReporterException('No failed logs found for function \"{}\"'.format(func_name))
+
         self.ts_iterations = iteration_info
         self._reset_session(func_name)
         
@@ -506,7 +514,7 @@ class RandomnessDetector:
             self.summarize_returns(func_name)
             self.summarize_keywords(func_name)
             self.summarize_assertions(func_name)               
-        except:
+        except Exception as e:
             pass
         finally:
             # Compensate for invalid value  
@@ -544,7 +552,7 @@ class RandomnessDetector:
             self.rnd_probability += 0.5 * (self._sum_return_lines(self.returns['passed']) - 2) / self.ts_iterations['passed']
         if len(self.returns['failed'].keys()) > 1:
             self.rnd_probability += 0.5 * (self._sum_return_lines(self.returns['failed']) - 2) / self.ts_iterations['failed']
-
+        
         try:
             final = 1 - 1 / abs(self.rnd_probability)
             if final < 0:

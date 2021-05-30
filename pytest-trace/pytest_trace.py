@@ -1,11 +1,20 @@
 import pytest, sys, traceback, linecache, inspect, json, collections, os
-from loghandler import LogHandler
+from flakyreporter.loghandler import LogHandler
 
+def pytest_addoption(parser):
+    group = parser.getgroup('flakytrace')
+    group.addoption(
+        '--flakytrace',
+        action='store_true',
+        dest='counter',
+        default=False,
+        help='enable tracing for FlakyReporter'
+    )
 try: 
     to_trace = [line.rstrip() for line in open('./tracelist.lst')]
 except:
     to_trace = []
-
+print(to_trace)
 logger = LogHandler()
 def _trace_lines(frame, event, arg):  
     """
@@ -16,7 +25,7 @@ def _trace_lines(frame, event, arg):
     co = frame.f_code
     parent = frame.f_back.f_code
     func_name = co.co_name  
-    #func_name = co.co_name.split("::")[-1]
+
     if event == 'line':
         if func_name.split('::')[-1] in to_trace:
             logger.log_trace(frame, event, arg)
@@ -32,6 +41,7 @@ def _trace_lines(frame, event, arg):
         logger.log_trace(frame, event, arg)
     return _trace_lines
 
+@pytest.hookimpl
 def pytest_runtest_call(item):
     """
     Hooks pytest oncall function.
@@ -47,9 +57,11 @@ def pytest_runtest_call(item):
         }
         sys.settrace(_trace_lines)
 
-def pytest_runtest_teardown(item, nextitem):
+@pytest.hookimpl
+def pytest_runtest_teardown(item, nextitem):    
     sys.settrace(None)
-    
+
+@pytest.hookimpl    
 def pytest_terminal_summary(terminalreporter, exitstatus, config):
     """
     Hooks writing summary to terminal from pytest.
@@ -65,6 +77,7 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
             print(e)
     _print_logs()
 
+@pytest.hookimpl
 def pytest_assertion_pass(item, lineno, orig, expl):
     """
     Experimental hook from pytest.

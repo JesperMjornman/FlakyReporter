@@ -16,7 +16,7 @@ class FlakyReporter():
                 if self.args.scan:
                     self.generate_report()
             else:
-                args_str = '-vv -s'
+                args_str = '-vv -s --flakytrace'
                 self.run_test_suite(args_str)
                 self.generate_report()
 
@@ -53,7 +53,7 @@ class FlakyReporter():
             print('Failed to read logs, %s' % e)
             return
         
-        rdetector = RandomnessDetector(logger.logs, logger.iteration_info, self.args.reset if self.args.reset else False)
+        rdetector = RandomnessDetector(logger.logs, logger.iteration_info, '--reset' in sys.argv)
         
         for target in self.args.target:
             try:
@@ -61,6 +61,7 @@ class FlakyReporter():
             except util.RandReporterException as e:
                 print('RandReporter Exception, %s ' % e)
             except Exception as e:
+                print(e)    
                 print('Failed to locate log file \"%s\"' % target)
 
     def _run_plugin_trace(self, args_str) -> None:
@@ -74,7 +75,7 @@ class FlakyReporter():
         """
         Creates workspace folders for tracing.
         """
-        if self.args.reset:
+        if '--reset' in sys.argv:
             try:
                 rmtree('./tracelogs')
             except Exception as e:
@@ -105,7 +106,7 @@ class FlakyReporter():
             '--scan',
             action='store_true',
             required=False,
-            help='scan the target function(s) in the produced tracelogs.'
+            help='scan the target function(s) in the produced tracelogs. Require the -t/--target flag to specify target function name.'
         )
 
         parser.add_argument(
@@ -137,7 +138,7 @@ class FlakyReporter():
         parser.add_argument(
             '-r',
             '--reset',
-            required='--scan' not in sys.argv,
+            #required='--scan' not in sys.argv,
             help='define if older log files from earlier session(s) should be erased. Fully resets the workspace.'
         )
 
