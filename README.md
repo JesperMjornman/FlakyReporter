@@ -1,8 +1,10 @@
 # FlakyReporter
 
-A package used for re-running known flaky tests and producing a report on if they could be flaky due to Randomness. 
+A package used for re-running known flaky tests and producing a report on if they could be flaky due to Randomness.
 
 When run, will rerun any specified pytest and trace any specified function and finish with creating a .html report on the findings made.
+
+The *example*([example-folder](example)) folder contains information about doing a test run on already created log files as an example on how to run the tool.
 
 Note
  - This only works on the pytest framework.
