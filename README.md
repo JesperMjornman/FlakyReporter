@@ -25,7 +25,7 @@ which will scan the trace logs from the ```test_testFunctionName``` function and
 
 ### Important Usage
 
-The ```pytest.ini``` file must be located inside the target project folder and the ```__pycache__`` folder created from the tests run must be removed before the FlakyReporter will fully work.
+The ```pytest.ini``` file must be located inside the target project folder and the ```__pycache__``` folder created from the tests run must be removed before the FlakyReporter will fully work.
 
 ### Flags
 
