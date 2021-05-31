@@ -54,14 +54,14 @@ The created .html report contains information about found indicators of randomne
 
 To gain the best understanding of what causes an issue, the *Assertions* button provides the most relevant information if the locals used managed to be read. 
 
-The *No Result* image represents the output when no randomness is found.
+The *No Result* image represents the output when no randomness is found.<br/>
 ![No Result](resource/report-result-no-randomness.png)
 
-The *Many Indications* image represents the output when many indicators are found. All buttons present provide some additional information about what information was found when clicked.
+The *Many Indications* image represents the output when many indicators are found. All buttons present provide some additional information about what information was found when clicked.<br/>
 ![Many Indications](resource/report-result-many-indications.png)
 
-When a button is clicked it expands a new subbox and displays additional useful information. In the image below we identify the variable *results* which is random over all iterations, passing and failing.  We further note that it is used in the final assertion, providing the information that the random variable is causing flakiness due to invalid random outcomes.
+When a button is clicked it expands a new subbox and displays additional useful information. In the image below we identify the variable *results* which is random over all iterations, passing and failing.  We further note that it is used in the final assertion, providing the information that the random variable is causing flakiness due to invalid random outcomes.<br/>
 ![Clicked Button](resource/report-clicked-button.png)
 
-The report also contains META data of the operating system, python version etc., the number of iterations analyzed is also presented in a "passing" to "failing" indicator.
+The report also contains META data of the operating system, python version etc., the number of iterations analyzed is also presented in a "passing" to "failing" indicator.<br/>
 ![Iterations](resource/report-iterations-section.png)
