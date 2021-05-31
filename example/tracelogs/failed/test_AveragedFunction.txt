@@ -1,0 +1,192 @@
+___line 189     xtol = 1e-1
+___line 190     func = lambda x: x - 0.25 + np.random.normal(scale=0.01)
+___line 191     root = noisyopt.bisect(noisyopt.AveragedFunction(func), -2, 2, xtol=xtol,
+___line 192                            errorcontrol=True)
+___line 193     npt.assert_allclose(root, 0.25, atol=xtol)
+___line 194 
+___line 195 def test_AveragedFunction():
+___line 196     ## averaging a simple function
+___line 197     func = lambda x: np.asarray(x).sum()
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f17ebba60>)
+___line 198     avfunc = noisyopt.AveragedFunction(func, N=30)
+Call-> __init__ : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 425     def __init__(self, func, fargs=None, **kwargs):
+C->		___line 434         super(AveragedFunction, self).__init__(**kwargs)
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(kwargs = {N)
+C->		___line 435         if fargs is not None:
+C->		___line 440             self.func = func
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f17ebba60>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+___line 199     av, avse = avfunc([1.0, 1.0])
+Call-> __call__ : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 442     def __call__(self, x):
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(x = [1.0)
+C->		___line 443         try:
+C->		___line 445             xt = tuple(x)
+C->		___line 449         if xt in self.cache:
+C->		___line 460             if self.paired:
+C->		___line 463                 values = [self.func(x) for i in range(self.N)]
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(x = [1.0)
+C->		___line 464             self.cache[xt] = values
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(x = [1.0)
+C->		___line 465             self.nev += self.N
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+C->		___line 466         return np.mean(self.cache[xt]), np.std(self.cache[xt], ddof=1)/self.N**.5
+C->		ret (2.0, 0.0)
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f17ebba60>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(av = 2.0)
+<	(avse = 0.0)
+___line 200     assert av == 2.0
+<	(av = 2.0)
+___line 201     assert avse == 0.0
+___line 205     diffse = avfunc.diffse([1.0, 1.0], [2.0, 1.0])
+Call-> diffse : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 468     def diffse(self, x1, x2):
+C->		___line 470         f1, f1se = self(x1)
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(x1 = [1.0)
+C->		___line 471         f2, f2se = self(x2)
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+C->		___line 472         if self.paired:
+C->		___line 478             return (f1se**2 + f2se**2)**.5
+C->		ret 0.0
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f17ebba60>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(av = 2.0)
+<	(diffse = 0.0)
+___line 206     assert diffse == 0.0
+___line 209     avfunc.N *= 2
+Call-> N : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 383     @N.setter
+C->		___line 385         N = int(value)
+C->	<	(value = 60)
+<	(N = 60)
+C->		___line 386         if self.paired and (N > self._N):
+C->		___line 389         self._N = N
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f17ebba60>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1b9a0>)
+<	(av = 2.0)
+___line 210     assert avfunc.N == 60
+Call-> N : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 378     @property
+C->		___line 381         return self._N
+C->		ret 60
+___line 213     func = lambda x: np.asarray(x).sum() + np.random.randn()
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f1804e430>)
+___line 214     avfunc = noisyopt.AveragedFunction(func, N=30)
+Call-> __init__ : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 425     def __init__(self, func, fargs=None, **kwargs):
+C->		___line 434         super(AveragedFunction, self).__init__(**kwargs)
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(kwargs = {N)
+C->		___line 435         if fargs is not None:
+C->		___line 440             self.func = func
+___line 216     av30_1, avse30_1 = avfunc([1.0, 1.0])
+Call-> __call__ : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 442     def __call__(self, x):
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 443         try:
+C->		___line 445             xt = tuple(x)
+C->		___line 449         if xt in self.cache:
+C->		___line 460             if self.paired:
+C->		___line 463                 values = [self.func(x) for i in range(self.N)]
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 464             self.cache[xt] = values
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 465             self.nev += self.N
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+C->		___line 466         return np.mean(self.cache[xt]), np.std(self.cache[xt], ddof=1)/self.N**.5
+C->		ret (2.043571484675824, 0.1391467956866143)
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f1804e430>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(av = 2.0)
+<	(avse = 0.0)
+<	(av30_1 = 2.043571484675824)
+<	(avse30_1 = 0.1391467956866143)
+___line 217     av30_2, avse30_2 = avfunc([1.0, 1.0])
+Call-> __call__ : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 442     def __call__(self, x):
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 443         try:
+C->		___line 445             xt = tuple(x)
+C->		___line 449         if xt in self.cache:
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 450             Nold = len(self.cache[xt])
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 451             if Nold < self.N:
+C->		___line 466         return np.mean(self.cache[xt]), np.std(self.cache[xt], ddof=1)/self.N**.5
+C->		ret (2.043571484675824, 0.1391467956866143)
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f1804e430>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(av = 2.0)
+<	(avse = 0.0)
+<	(av30_2 = 2.043571484675824)
+<	(avse30_2 = 0.1391467956866143)
+___line 218     assert av30_1 == av30_2
+<	(av = 2.0)
+<	(av30_1 = 2.043571484675824)
+<	(av30_2 = 2.043571484675824)
+___line 219     assert avse30_1 == avse30_2
+___line 221     avfunc.N *= 2
+Call-> N : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 383     @N.setter
+C->		___line 385         N = int(value)
+C->	<	(value = 60)
+<	(N = 60)
+C->		___line 386         if self.paired and (N > self._N):
+C->		___line 389         self._N = N
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f1804e430>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(av = 2.0)
+___line 222     av60, avse60 = avfunc([1.0, 1.0])
+Call-> __call__ : /home/jesper/Documents/Programming/Skolarbete/Exjobb/public_projects/empirical-projects/noisyopt/noisyopt/main.py
+C->		___line 442     def __call__(self, x):
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 443         try:
+C->		___line 445             xt = tuple(x)
+C->		___line 449         if xt in self.cache:
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 450             Nold = len(self.cache[xt])
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 451             if Nold < self.N:
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+C->		___line 452                 Nadd = self.N - Nold
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+C->		___line 453                 if self.paired:
+C->		___line 456                     values = [self.func(x) for i in range(Nadd)]
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 457                 self.cache[xt].extend(values)
+C->	<	(self = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(x = [1.0)
+C->		___line 458                 self.nev += Nadd
+C->		___line 466         return np.mean(self.cache[xt]), np.std(self.cache[xt], ddof=1)/self.N**.5
+C->		ret (2.085935260949763, 0.14635281842688005)
+<	(func = <functiontest_AveragedFunction.<locals>.<lambda>at0x7f6f1804e430>)
+<	(avfunc = <noisyopt.main.AveragedFunctionobjectat0x7f6f17c1bcd0>)
+<	(av = 2.0)
+<	(avse = 0.0)
+<	(av60 = 2.085935260949763)
+<	(avse60 = 0.14635281842688005)
+___line 223     assert av30_1 != av60
+<	(av = 2.0)
+<	(av30_1 = 2.043571484675824)
+<	(av60 = 2.085935260949763)
+___line 224     assert avse30_1 > avse60
+>	(assert 0.1391467956866143 > 0.14635281842688005)
+====================
+

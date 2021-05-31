@@ -6,8 +6,10 @@ When run, will rerun any specified pytest and trace any specified function and f
 
 Note
  - This only works on the pytest framework.
+ - Assumes that the target test is confirmed flaky.
  - Require the user to perform some manual tasks, specified in __IMPORTANT USAGE__.
  - Only specifies how likely it thinks the flakiness is due to Randomness and may provide false negatives/positives.
+ - Example of trace logs are locate in the *example* folder.
 
 ## Installation
 

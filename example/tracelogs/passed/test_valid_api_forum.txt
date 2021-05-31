@@ -1,0 +1,2508 @@
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7f8cb3b6e700>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7f8cb37fe280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.3319.102 Safari/537.36'})
+ +      where <function get at 0x7f8cb37fe280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
+___line 23 def test_valid_api_forum():
+___line 24     url = route.posts_meta(forum='funny')
+Call-> posts_meta : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/dcard-spider/dcard/api.py
+C->		___line 97     def posts_meta(self, forum):
+C->	<	(self = <dcard.api.Routeobjectat0x7fd3118d77f0>)
+<	(forum = funny)
+C->		___line 98         return Route.host + '_api/forums/{forum}/posts'.format(forum=forum)
+C->		ret https://www.dcard.tw/_api/forums/funny/posts
+<	(url = https)
+___line 25     assert requests.get(url, headers=headers).ok
+Call-> ok : /home/jesper/Documents/Programming/Skolarbete/Exjobb/FixFlakiesResourceLeak/PyFlakies/env/lib/python3.8/site-packages/requests/models.py
+C->		___line 695     @property
+C->		___line 704         try:
+C->		___line 705             self.raise_for_status()
+C->		___line 708         return True
+C->		ret True
+>	(True
+ +  where True = <Response [200]>.ok
+ +    where <Response [200]> = <function get at 0x7fd31156c280>('https://www.dcard.tw/_api/forums/funny/posts', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36'})
+ +      where <function get at 0x7fd31156c280> = requests.get)
+====================
+
