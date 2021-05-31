@@ -35,6 +35,10 @@ class LogHandler():
             raise Exception(self.err)
           
     def log_meta(self, meta, load_cpu_info = True)->None:
+        """
+        Log the meta data of the computer, i.e. version, OS etc.
+        Also logs meta of Python version etc.
+        """
         if meta is not None:
             self.logs['meta'] = meta
         else:

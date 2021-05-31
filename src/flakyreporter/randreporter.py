@@ -294,20 +294,6 @@ class RandomnessDetector:
         }     
 
     def summarize_locals(self, func_name): # Fixa till och ta bort all skit som är lambda funktioner..
-        """
-        Analyzes all locals through all iteartions to locate differing values.
-        Note that each line still has data from previous lines and all newly executed lines
-        might not alter any locals but maintain thes previous ones. 
-
-        This is not an issue and can be ignored but is presented by only first and last occurence in the
-        final report as the lines between are of no interest when the same amount of occurences are present.
-
-        Args:
-            func_name - function name
-        
-        Returns:
-            result to be added to rnd_probability, string representation describing differing values on each line.
-        """
         arg = ""
         res = 0
         if not self.locals:
