@@ -15,7 +15,7 @@ Note
 
 ## Installation
 Navigate to the *FlakyReporter* folder.
-run the command ```pip install pytest-trace/``` and then run the command ```pip install .```.
+run the command ```pip install pytest-trace/``` and then run the command <br/>```pip install .```.
 
 ## Usage
 
