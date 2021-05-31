@@ -11,6 +11,8 @@ FlakyReporter is installed by running ```pip install flakyreporter```.
 
 ## Usage
 
+__READ IMPORTANT USAGE BEFORE RUNNING THE APPLICATION__
+
 When both ```pytest-trace``` and ```flakyreporter``` are installed the program can be used as a python3 package.
 
 The most common type of command to execute is:
@@ -20,6 +22,10 @@ This command will run the file ```test.py``` 100 times and trace the execution o
 If you already have valid log files stored, you can scan them directly by running:
 ```python3 -m flakyreporter --scan -t test_testFunctionName```
 which will scan the trace logs from the ```test_testFunctionName``` function and produce a report on the findings made.
+
+### Important Usage
+
+The ```pytest.ini``` file must be located inside the target project folder and the ```__pycache__`` folder created from the tests run must be removed before the FlakyReporter will fully work.
 
 ### Flags
 
