@@ -2,6 +2,8 @@
 
 In this folder two example trace logs are located. The passed runs of trace logs are locate in the passed folder and the failed runs in the failed folder. 
 
+Note that this example run does not require any ```pytest.ini```.
+
 The example functions are:
  - test_AveragedFunction
  - test_valid_api_forum
