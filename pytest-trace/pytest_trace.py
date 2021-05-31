@@ -14,7 +14,7 @@ try:
     to_trace = [line.rstrip() for line in open('./tracelist.lst')]
 except:
     to_trace = []
-print(to_trace)
+
 logger = LogHandler()
 def _trace_lines(frame, event, arg):  
     """
