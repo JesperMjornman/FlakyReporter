@@ -14,11 +14,8 @@ Note
  - Example of trace logs are locate in the *example* folder.
 
 ## Installation
-
-Requires installation of ```pytest-trace```, locate inside the ```pytest-trace/``` folder.
-Firstly install ```pytest-trace``` by running ```pip install pytest-trace/pytest-trace```.
-
-FlakyReporter is installed by running ```pip install flakyreporter```.
+Navigate to the *FlakyReporter* folder.
+run the command ```pip install pytest-trace/``` and then run the command ```pip install .```.
 
 ## Usage
 
