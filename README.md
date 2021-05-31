@@ -50,9 +50,9 @@ If any ```pytest.ini``` file already exists, add the line: *enable_assertion_pas
 
 ## HTML Report
 
-The created .html report contains information about found indicators of randomness, a result of how likely it thinks that the flakiness is due to Randomness. The report serves as a guidance more than a "automatic fixer", as the information provided in the report is to help a developer locate and fix the root cause. By reading all indicators found it is possible to scan and get a better understanding of where the problem may manifest. 
+The created .html report contains information about found indicators of randomness, a result of how likely it thinks that the flakiness is due to Randomness. The report serves as a guidance more than a "automatic fixer", as the information provided in the report is to help a developer locate and fix the root cause. By reading all indicators found it is possible to scan and get a better understanding of where the problem may manifest.
 
-To gain the best understanding of what causes an issue, the *Assertions* button provides the most relevant information if the locals used managed to be read. 
+The *Assertions* and *Keywords* provides the most information about locations and variables that might be causing the test to introduce flakiness due to Randomness.
 
 The *No Result* image represents the output when no randomness is found.<br/>
 ![No Result](resource/report-result-no-randomness.png)
