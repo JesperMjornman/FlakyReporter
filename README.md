@@ -58,7 +58,7 @@ The *No Result* image represents the output when no randomness is found.
 The *Many Indications* image represents the output when many indicators are found. All buttons present provide some additional information about what information was found when clicked.
 ![Many Indications](resource/report-result-many-indications.png)
 
-When a button is clicked it expands a new subbox and displays additional useful information.
+When a button is clicked it expands a new subbox and displays additional useful information. In the image below we identify the variable *results* which is random over all iterations, passing and failing.  We further note that it is used in the final assertion, providing the information that the random variable is causing flakiness due to invalid random outcomes.
 ![Clicked Button](resource/report-clicked-button.png)
 
 The report also contains META data of the operating system, python version etc., the number of iterations analyzed is also presented in a "passing" to "failing" indicator.
