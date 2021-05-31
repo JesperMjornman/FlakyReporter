@@ -15,12 +15,12 @@ __READ IMPORTANT USAGE BEFORE RUNNING THE APPLICATION__
 
 When both ```pytest-trace``` and ```flakyreporter``` are installed the program can be used as a python3 package.
 
-The most common type of command to execute is:
-```python3 -m flakyreporter -i 100 -f ./someproject/tests/test.py -t test_testFunctionName```
+The most common type of command to execute is:<br/>
+```python3 -m flakyreporter -i 100 -f ./someproject/tests/test.py -t test_testFunctionName```<br/>
 This command will run the file ```test.py``` 100 times and trace the execution of ```test_testFunctionName``` and then produce a report for it.
 
-If you already have valid log files stored, you can scan them directly by running:
-```python3 -m flakyreporter --scan -t test_testFunctionName```
+If you already have valid log files stored, you can scan them directly by running:<br/>
+```python3 -m flakyreporter --scan -t test_testFunctionName```<br/>
 which will scan the trace logs from the ```test_testFunctionName``` function and produce a report on the findings made.
 
 ### Important Usage
