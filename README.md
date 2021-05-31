@@ -53,6 +53,8 @@ The created .html report contains information about found indicators of randomne
 
 The *Assertions* and *Keywords* provides the most information about locations and variables that might be causing the test to introduce flakiness due to Randomness.
 
+The report collects all indicators of a random behaviour and presents it in a compact format where it displays how both passing and failing runs vary in locals, assertions and returns. When the assertions differe widely in values between iterations, it is an indicator that the flakiness of the test is due to Randomness. Likewise we can see how values that gets assigned a random value may impact the final assertion and in that way also indicate Randomness as the cause of flakiness.
+
 The *No Result* image represents the output when no randomness is found.<br/>
 ![No Result](resource/report-result-no-randomness.png)
 
