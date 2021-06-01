@@ -27,11 +27,16 @@ class HtmlFormatter(object):
         except:
             print("Optional button render failed.")
 
-    def format_assertion(text): # Lägg till att skriva ut texten för assertion exempel: "assert len(results) == 10"
+    def format_assertion(text, assertion_str = None): # Lägg till att skriva ut texten för assertion exempel: "assert len(results) == 10"
+        if assertion_str is not None:
+            assertion_str = '<b>' + assertion_str + '</b><BR><BR>'
+        else:
+            assertion_str = ''
+
         text = text.replace(".\n", ".\n<BR>")
         if '.\n' in text:
             text = text.replace(".\n", "<SPAN style='font-size:12px;'>&#10071</SPAN>\n", 1)
-        return text
+        return assertion_str + text
     
     def format_html_locals(text):
         try:
@@ -118,7 +123,7 @@ class HtmlFormatter(object):
         ASSERTIONS = (    ("<BUTTON type='button' class='btn btn-info' data-toggle='collapse' data-target='#Assertions' style='position:relative; width:120px; height:50px; border:none; background-color:black; font-size:large;'>Assertions: </BUTTON><BR>")
                         + ("<DIV id='Assertions' class='collapse'><BR>")
                         + ("<DIV style='left:0.5%; position:relative; background-color:lightgrey; border:solid black 1px; width:98%;' contenteditable='false'>")
-                        + ("<BR><DIV style='left:0.5%; position:relative;'>{}</DIV><BR></DIV></DIV><BR>").format(HtmlFormatter.format_assertion(collected_information['assertions'])))
+                        + ("<BR><DIV style='left:0.5%; position:relative;'>{}</DIV><BR></DIV></DIV><BR>").format(HtmlFormatter.format_assertion(collected_information['assertions'], collected_information['assert_str'])))
         
         RETURNS    = (    ("<BUTTON type='button' class='btn btn-info' data-toggle='collapse' data-target='#Returns' style='position:relative; width:120px; height:50px; border:none; background-color:black; font-size:large;'>Returns: </BUTTON><BR>")
                         + ("<DIV id='Returns' class='collapse'><BR>")
@@ -133,7 +138,7 @@ class HtmlFormatter(object):
         DIVERGENCE = (    ("<BUTTON type='button' class='btn btn-info' data-toggle='collapse' data-target='#Divergence' style='position:relative; width:120px; height:50px; border:none; background-color:black; font-size:large;'>Divergence: </BUTTON><BR>")
                         + ("<DIV id='Divergence' class='collapse'><BR>")
                         + ("<DIV style='left:0.5%; position:relative; background-color:lightgrey; border:solid black 1px; width:98%;' contenteditable='false'>")
-                        + ("<BR><DIV style='left:0.5%; position:relative;'>{}{}</DIV><BR></DIV></DIV><BR>").format(HtmlFormatter.format_to_html(collected_information['divergence']), HtmlFormatter.format_to_html(collected_information['commons'])))
+                        + ("<BR><DIV style='left:0.5%; position:relative;'>{}</DIV><BR></DIV></DIV><BR>").format(HtmlFormatter.format_to_html(collected_information['divergence'])))#, HtmlFormatter.format_to_html(collected_information['commons'])))
 
         B_DIVIDER  = (    ("</P1></DIV><BR><H2 style='left:0.5%; position:relative;'>Additional Information:</H2><DIV style='left:0.5%; position:relative; background-color:lightgrey; border:solid black 1px; width:98%;' contenteditable='false'><BR>"))
 

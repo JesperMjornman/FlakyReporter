@@ -1,9 +1,8 @@
 import math, json
-import pkgutil
-from flakyreporter.util import RandReporterException
-from flakyreporter.util import bcolors as Color
+from util import RandReporterException
+from util import bcolors as Color
 from typing import ClassVar
-from flakyreporter.htmlformatter import HtmlFormatter
+from htmlformatter import HtmlFormatter
 
 class RandomnessDetector:
     def __init__(self, logs, iteration_info, args_reset):
@@ -199,17 +198,13 @@ class RandomnessDetector:
         
     def _check_for_keyword(self, func_name, lineno, line):
         result = dict()
-        try:
-            data = str(pkgutil.get_data(__name__, 'keywords.dat')).replace('\'', '').replace('b', '').split('\\n')
-        except Exception as e:
-            raise RandReporterException(e)
-        
-        for keyword in data:
-            if keyword[:-1] in line:               
-                try:
-                    result[keyword[:-1]] += 1
-                except:
-                    result[keyword[:-1]] = 1   
+        with open('./keywords.txt', "r") as f:
+            for keyword in f.readlines():
+                if keyword[:-1] in line:               
+                    try:
+                        result[keyword[:-1]] += 1
+                    except:
+                        result[keyword[:-1]] = 1   
         
         if result:
             try:
@@ -294,6 +289,20 @@ class RandomnessDetector:
         }     
 
     def summarize_locals(self, func_name): # Fixa till och ta bort all skit som är lambda funktioner..
+        """
+        Analyzes all locals through all iteartions to locate differing values.
+        Note that each line still has data from previous lines and all newly executed lines
+        might not alter any locals but maintain thes previous ones. 
+
+        This is not an issue and can be ignored but is presented by only first and last occurence in the
+        final report as the lines between are of no interest when the same amount of occurences are present.
+
+        Args:
+            func_name - function name
+        
+        Returns:
+            result to be added to rnd_probability, string representation describing differing values on each line.
+        """
         arg = ""
         res = 0
         if not self.locals:
@@ -443,7 +452,6 @@ class RandomnessDetector:
                     self.rnd_probability += (num_diff['passed'][local_a] + 1) / self.ts_iterations['passed']
                     self.rnd_probability += (num_diff['failed'][local_a] + 1) / self.ts_iterations['failed']
                 else:
-                    print(num_diff['failed']['avse30_1'])
                     self.collected_information['assertions'] =\
                         'The local variable \"{}\" and local variable \"{}\" used in assertion has different values in {} out of {} iterations and {} out of {} iterations respectively, for passing runs.\nValues used in assertion differs between {} out of {} passing iterations and {} out of {} failing iterations.'\
                         .format(
@@ -466,14 +474,14 @@ class RandomnessDetector:
         lineno = list(self.divergence.keys())[0]
         try:
             self.collected_information['commons'] = self.divergence[lineno][func_name]['commons']
-            self.collected_information['divergence'] = 'Divergence located at line {}.\nExpected: {}, but got: {}.'.format(
+            self.collected_information['divergence'] = 'Divergence located at line {}.\nExpected: \"{}\", but got: \"{}\".'.format(
                 lineno, 
                 self.divergence[lineno][func_name]['expected'], 
                 self.divergence[lineno][func_name]['got'])          
         except:
             func = list(self.divergence[lineno].keys())[0]
             self.collected_information['commons'] = self.divergence[lineno][func]['commons']
-            self.collected_information['divergence'] = 'Divergence located in called function {}, line {}.\nExpected: {}, but got: {}.'.format(
+            self.collected_information['divergence'] = 'Divergence located in called function {}, line {}.\nExpected: \"{}\", but got: \"{}\".'.format(
                 func,
                 self.divergence[lineno][func]['clineno'], 
                 self.divergence[lineno][func]['expected'], 
@@ -484,9 +492,6 @@ class RandomnessDetector:
             print('Log of traced function {} not found.'.format(func_name))
             raise Exception('Function name not found in ./tracelogs')
         
-        elif 'failed' not in self.logs[func_name]:
-            raise RandReporterException('No failed logs found for function \"{}\"'.format(func_name))
-
         self.ts_iterations = iteration_info
         self._reset_session(func_name)
         
@@ -500,7 +505,7 @@ class RandomnessDetector:
             self.summarize_returns(func_name)
             self.summarize_keywords(func_name)
             self.summarize_assertions(func_name)               
-        except Exception as e:
+        except:
             pass
         finally:
             # Compensate for invalid value  
@@ -538,7 +543,7 @@ class RandomnessDetector:
             self.rnd_probability += 0.5 * (self._sum_return_lines(self.returns['passed']) - 2) / self.ts_iterations['passed']
         if len(self.returns['failed'].keys()) > 1:
             self.rnd_probability += 0.5 * (self._sum_return_lines(self.returns['failed']) - 2) / self.ts_iterations['failed']
-        
+
         try:
             final = 1 - 1 / abs(self.rnd_probability)
             if final < 0:
