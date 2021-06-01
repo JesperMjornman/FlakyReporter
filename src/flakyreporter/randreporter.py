@@ -1,8 +1,8 @@
-import math, json
-from util import RandReporterException
-from util import bcolors as Color
+import math, json, pkgutil
+from flakyreporter.util import RandReporterException
+from flakyreporter.util import bcolors as Color
 from typing import ClassVar
-from htmlformatter import HtmlFormatter
+from flakyreporter.htmlformatter import HtmlFormatter
 
 class RandomnessDetector:
     def __init__(self, logs, iteration_info, args_reset):
@@ -198,13 +198,17 @@ class RandomnessDetector:
         
     def _check_for_keyword(self, func_name, lineno, line):
         result = dict()
-        with open('./keywords.txt', "r") as f:
-            for keyword in f.readlines():
-                if keyword[:-1] in line:               
-                    try:
-                        result[keyword[:-1]] += 1
-                    except:
-                        result[keyword[:-1]] = 1   
+        try:
+            data = str(pkgutil.get_data(__name__, 'keywords.dat')).replace('\'', '').replace('b', '').split('\\n')
+        except Exception as e:
+            raise RandReporterException(e)
+        
+        for keyword in data:
+            if keyword[:-1] in line:               
+                try:
+                    result[keyword[:-1]] += 1
+                except:
+                    result[keyword[:-1]] = 1   
         
         if result:
             try:
@@ -505,7 +509,8 @@ class RandomnessDetector:
             self.summarize_returns(func_name)
             self.summarize_keywords(func_name)
             self.summarize_assertions(func_name)               
-        except:
+        except Exception as e:
+            print(e)
             pass
         finally:
             # Compensate for invalid value  
