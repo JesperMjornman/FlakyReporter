@@ -86,7 +86,7 @@ class HtmlFormatter(object):
         elif probability > 0.7:
             result = "has <P1 style='color:red; font-weight:bold;'>many indications of Randomness</P1>"
         try:
-            return (("{} <P1>based on the collected information below.</P1><BR>").format(result))
+            return (("{} <P1>.</P1><BR>").format(result))
         except:
             print("Failed to fetch probability.")
     
@@ -164,12 +164,12 @@ class HtmlFormatter(object):
                     return
 
                 try:
-                    if HtmlFormatter.button_render(collected_information['locals']):    
-                        file.write(LOCALS)
-                    if HtmlFormatter.button_render(collected_information['assertions']):
-                        file.write(ASSERTIONS)
-                    if HtmlFormatter.button_render(collected_information['returns']):
-                        file.write(RETURNS)
+                   # if HtmlFormatter.button_render(collected_information['locals']):    
+                   #     file.write(LOCALS)
+                   #  if HtmlFormatter.button_render(collected_information['assertions']):
+                   #      file.write(ASSERTIONS)
+                   # if HtmlFormatter.button_render(collected_information['returns']):
+                   #      file.write(RETURNS)
                     if HtmlFormatter.button_render(collected_information['keywords']):
                         file.write(KEYWORDS)
                     if HtmlFormatter.button_render(collected_information['divergence']) or HtmlFormatter.button_render(collected_information['commons']):
