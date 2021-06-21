@@ -86,7 +86,7 @@ class HtmlFormatter(object):
         elif probability > 0.7:
             result = "has <P1 style='color:red; font-weight:bold;'>many indications of Randomness</P1>"
         try:
-            return (("{} <P1>.</P1><BR>").format(result))
+            return (("{}<P1>.</P1><BR>").format(result))
         except:
             print("Failed to fetch probability.")
     
