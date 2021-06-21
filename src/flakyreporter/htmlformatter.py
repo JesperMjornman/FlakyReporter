@@ -27,7 +27,7 @@ class HtmlFormatter(object):
         except:
             print("Optional button render failed.")
 
-    def format_assertion(text, assertion_str = None): # Lägg till att skriva ut texten för assertion exempel: "assert len(results) == 10"
+    def format_assertion(text, assertion_str = None):
         if assertion_str is not None:
             assertion_str = '<b>' + assertion_str + '</b><BR><BR>'
         else:
@@ -76,7 +76,7 @@ class HtmlFormatter(object):
         except:
             print("Failed to fetch System Meta.")
 
-    def determine_probability(probability): # Fixa texten som "based on information below", vilket är tomt om "no indications"
+    def determine_probability(probability): 
         if probability >= 0.0 and probability <= 0.1:
             result = "has <P1 style='color:green; font-weight:bold;'>no indications of Randomness</P1>"
         elif probability > 0.1 and probability <= 0.4:
