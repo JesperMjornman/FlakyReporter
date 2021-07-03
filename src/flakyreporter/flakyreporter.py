@@ -143,13 +143,3 @@ class FlakyReporter():
         )
 
         return parser.parse_args()
-
-#if __name__ == '__main__':
-#    reporter = FlakyReporter()
-    #reporter.dump_meta()
-    #args_str = '-vv -s'
-    #reporter.run_test_suite(args_str)
-    #reporter.fpy_trace._dump_trace_list()
-    #py.test.cmdline.main(args_str.split(" "))
-    
-    # Kör pytest och trams härifrån.
